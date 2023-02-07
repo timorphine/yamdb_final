@@ -10,7 +10,7 @@ services:
       - ./.env
 
   web:
-    image: timorphine/api_yamdb-web:latest
+    image: timorphine/yamdb_final:latest
     build: api_yamdb/
     restart: always
     volumes:
