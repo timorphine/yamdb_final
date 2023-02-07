@@ -77,5 +77,5 @@ class ReviewPermissions(permissions.BasePermission):
                     or request.user.is_moderator
                     or obj.author == request.user
                 )
-            else:
-                return True
+
+            return True
