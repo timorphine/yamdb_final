@@ -52,7 +52,6 @@ jobs:
           # context: api_yamdb
           push: true
           tags: timorphine/api_yamdb-web:latest
-          file: api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
