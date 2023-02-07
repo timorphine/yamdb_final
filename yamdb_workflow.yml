@@ -49,10 +49,10 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v2  
         with: 
-          context: api_yamdb
-          file: api_yamdb/Dockerfile
+          # context: api_yamdb
           push: true
-          tags: timorphine/yamdb_final:latest
+          tags: timorphine/api_yamdb-web:latest
+          file: api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
