@@ -17,9 +17,9 @@ from api_yamdb.settings import OUR_EMAIL
 from .filters import TitleFilter
 from .permissions import IsAdmin, IsAdminOrReadOnly, ReviewPermissions
 from .serializers import (CategorySerializer, CommentSerializer,
-                          GenreSerializer, ReviewSerializer,
+                          GenreSerializer, ReviewSerializer, SignUpSerializer,
                           TitleReadSerializer, TitleWriteSerializer,
-                          TokenSerializer, UserSerializer, SignUpSerializer)
+                          TokenSerializer, UserSerializer)
 
 
 class TitleViewSet(viewsets.ModelViewSet):
