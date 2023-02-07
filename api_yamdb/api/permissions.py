@@ -66,6 +66,7 @@ class ReviewPermissions(permissions.BasePermission):
             return True
 
         if request.user.is_authenticated:
+
             if request.method in [
                 'PATCH',
                 'DELETE'
@@ -76,4 +77,5 @@ class ReviewPermissions(permissions.BasePermission):
                     or request.user.is_moderator
                     or obj.author == request.user
                 )
-            return True
+            else:
+                return True
