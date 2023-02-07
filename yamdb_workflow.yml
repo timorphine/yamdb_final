@@ -46,11 +46,13 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Push to DockerHub
+        run: cd api_yamdb
         uses: docker/build-push-action@v2  
         with: 
           push: true
           tags: timorphine/yamdb_final:latest
           file: api_yamdb/Dockerfile
+        run: cd ..
 
   deploy:
     runs-on: ubuntu-latest
