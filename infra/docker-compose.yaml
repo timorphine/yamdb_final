@@ -11,6 +11,7 @@ services:
 
   web:
     image: timorphine/api_yamdb-web:latest
+    build: api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
