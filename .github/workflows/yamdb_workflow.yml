@@ -64,7 +64,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-            pwd
             ls
             sudo docker-compose stop
             sudo docker-compose rm web
